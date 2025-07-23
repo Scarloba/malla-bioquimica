@@ -1,29 +1,33 @@
+/* Fuente general */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f8f8f8;
+  background: #f8f8f8;  /* Fondo claro */
   margin: 20px;
   color: #333;
 }
 
+/* Título principal */
 h1 {
   text-align: center;
   margin-bottom: 25px;
-  font-family: 'Playfair Display', serif; /* Nueva fuente */
+  font-family: 'Playfair Display', serif;  /* Nueva fuente */
   font-size: 42px;
-  color: #310E10; /* Color solicitado */
+  color: #310E10;  /* Color solicitado */
   letter-spacing: 1px;
 }
 
+/* Contenedor de la malla */
 #malla {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #C43556;
+  background-color: #C43556;  /* Fondo del área de la malla */
   padding: 20px;
   border-radius: 8px;
 }
 
+/* Estilo de cada semestre */
 .semestre {
   border: 2px solid #555;
   padding: 15px;
@@ -40,6 +44,7 @@ h1 {
   font-weight: 600;
 }
 
+/* Estilo general de los ramos */
 .ramo {
   background-color: #86DDE4;
   color: #000;
@@ -51,18 +56,21 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
+/* Ramos aprobados */
 .ramo.aprobado {
   background-color: #7B182F;
   color: #fff;
   text-decoration: line-through;
 }
 
+/* Ramos bloqueados */
 .ramo.bloqueado {
   background-color: #197074;
   color: #ccc;
   cursor: not-allowed;
 }
 
+/* Efecto hover */
 .ramo:hover:not(.bloqueado):not(.aprobado) {
   background-color: #5cb8c4;
 }
