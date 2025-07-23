@@ -1,16 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Malla Civil Bioquímica PUCV</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Interactiva Ingeniería Civil Bioquímica</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f5f5f5;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    .semestre {
+      margin-bottom: 30px;
+    }
+    .ramos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .ramo {
+      background-color: #86DDE4;
+      padding: 12px;
+      border-radius: 5px;
+      width: 260px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s;
+    }
+    .ramo.aprobado {
+      background-color: #7B182F;
+      text-decoration: line-through;
+    }
+    .ramo.bloqueado {
+      background-color: #197074;
+      cursor: not-allowed;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 <body>
-  <h1>Malla Ingeniería Civil Bioquímica (11 semestres)</h1>
-  <div id="malla-container">
-    <!-- Semestres generados por JavaScript -->
-  </div>
-  <script src="script.js"></script>
+  <h1>Malla Interactiva Ingeniería Civil Bioquímica - PUCV</h1>
+  <div id="malla"></div>
+
+  <script src="malla.js"></script>
 </body>
 </html>
-
