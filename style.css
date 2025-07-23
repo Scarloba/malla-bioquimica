@@ -1,33 +1,32 @@
-/* Fuente general */
+/* Fuentes ya cargadas desde index.html:
+   - Playfair Display (para títulos y encabezados)
+   - Lato (para nombres de ramos)
+*/
+
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #f8f8f8;  /* Fondo claro */
+  font-family: 'Poppins', sans-serif; /* Para texto general, puedes cambiar si quieres */
+  background: #f8f8f8; /* Fondo neutro claro para buen contraste */
   margin: 20px;
   color: #333;
 }
 
-/* Título principal */
 h1 {
+  font-family: 'Playfair Display', serif;
+  color: #310E10;
   text-align: center;
   margin-bottom: 25px;
-  font-family: 'Playfair Display', serif;  /* Nueva fuente */
-  font-size: 42px;
-  color: #310E10;  /* Color solicitado */
-  letter-spacing: 1px;
 }
 
-/* Contenedor de la malla */
 #malla {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #C43556;  /* Fondo del área de la malla */
+  background-color: #C43556; /* Fondo del contenedor de la malla */
   padding: 20px;
   border-radius: 8px;
 }
 
-/* Estilo de cada semestre */
 .semestre {
   border: 2px solid #555;
   padding: 15px;
@@ -38,14 +37,15 @@ h1 {
 }
 
 .semestre h2 {
+  font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 12px;
   color: #197074;
   font-weight: 600;
 }
 
-/* Estilo general de los ramos */
 .ramo {
+  font-family: 'Lato', sans-serif; /* Fuente para los ramos */
   background-color: #86DDE4;
   color: #000;
   margin: 7px 0;
@@ -56,21 +56,18 @@ h1 {
   transition: background-color 0.3s ease;
 }
 
-/* Ramos aprobados */
 .ramo.aprobado {
   background-color: #7B182F;
   color: #fff;
   text-decoration: line-through;
 }
 
-/* Ramos bloqueados */
 .ramo.bloqueado {
   background-color: #197074;
   color: #ccc;
   cursor: not-allowed;
 }
 
-/* Efecto hover */
 .ramo:hover:not(.bloqueado):not(.aprobado) {
   background-color: #5cb8c4;
 }
