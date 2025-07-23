@@ -1,1 +1,23 @@
+body { font-family: Arial, sans-serif; padding: 20px; }
+.semestre { margin-bottom: 30px; }
+.ramos { display: flex; flex-wrap: wrap; gap: 8px; }
+.ramo {
+  padding: 8px 12px;
+  background-color: #86DDE4;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.ramo.aprobado {
+  background-color: #7B182F;
+  color: white;
+  text-decoration: line-through;
+}
+.ramo.bloqueado {
+  background-color: #197074;
+  color: white;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
 
