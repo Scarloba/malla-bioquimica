@@ -62,3 +62,8 @@ h1 {
 .ramo:hover:not(.bloqueado):not(.aprobado) {
   background-color: #5cb8c4;
 }
+
+#malla {
+  background-color: #C43556 !important;
+}
+
