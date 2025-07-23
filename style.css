@@ -1,6 +1,6 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: #947268; /* Fondo general */
+  background: #947268;
   margin: 20px;
   color: #333;
 }
@@ -25,7 +25,7 @@ h1 {
   border: 1px solid #ccc;
   padding: 15px;
   width: 280px;
-  background: #F4E3B2; /* Tarjeta */
+  background: #F4E3B2;
   border-radius: 8px;
   box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +40,7 @@ h1 {
 
 .ramo {
   font-family: 'Lato', sans-serif;
-  background-color: #45462A; /* Sin prerequisito (disponible) */
+  background-color: #45462A;
   color: #fff;
   margin: 7px 0;
   padding: 10px;
@@ -51,17 +51,17 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #74070E; /* Aprobado */
+  background-color: #74070E;
   color: #fff;
   text-decoration: line-through;
 }
 
 .ramo.bloqueado {
-  background-color: #947268; /* Bloqueado */
+  background-color: #947268;
   color: #ccc;
   cursor: not-allowed;
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #5cb8c4; /* Hover solo si está habilitado */
+  background-color: #5cb8c4;
 }
