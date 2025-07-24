@@ -27,7 +27,7 @@ h1 {
   width: 280px;
   background-color: #E1FDFE;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(119, 8, 14, 0.8); /* sombra rojiza */
+  box-shadow: 0 4px 6px rgba(119, 8, 14, 1); /* sombra rojiza */
 }
 
 .semestre h2 {
