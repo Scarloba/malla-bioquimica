@@ -34,13 +34,13 @@ h1 {
   font-family: 'Playfair Display', serif;
   text-align: center;
   margin-bottom: 12px;
-  color: #197074;
+  color: #570210;
   font-weight: 600;
 }
 
 .ramo {
   font-family: 'Lato', sans-serif;
-  background-color: #49273F; /* Ramos disponibles */
+  background-color: #49273F;
   color: #fff;
   margin: 7px 0;
   padding: 10px;
@@ -64,5 +64,5 @@ h1 {
 
 /* Hover solo si no está bloqueado ni aprobado */
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #5a4054;
+  background-color: #7E2625;
 }
