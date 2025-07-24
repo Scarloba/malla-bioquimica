@@ -1,13 +1,13 @@
 body {
   font-family: 'Lato', sans-serif;
-  background-color: #8097B7; /* Fondo general */
+  background-color: #8097B7;
   margin: 20px;
   color: #333;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  color: #570210; /* Color título */
+  color: #570210;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -17,31 +17,29 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #8097B7; /* Mismo fondo para el contenedor */
+  background-color: #8097B7; /* mismo que body para un fondo unificado */
   padding: 20px;
-  border-radius: 8px;
 }
 
 .semestre {
-  border: 2px solid #211828; /* Borde oscuro */
+  border: 2px solid #211828;
   padding: 15px;
   width: 280px;
-  background: #E1FDFE; /* Fondo tarjetas */
+  background-color: #E1FDFE;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(199, 50, 50, 0.3); /* Sombra rojiza suave */
+  box-shadow: 0 4px 6px rgba(119, 8, 14, 0.4); /* sombra rojiza */
 }
 
 .semestre h2 {
   font-family: 'Playfair Display', serif;
-  color: #570210; /* Color encabezados semestre */
+  color: #570210;
   text-align: center;
   margin-bottom: 12px;
   font-weight: 600;
 }
 
 .ramo {
-  font-family: 'Lato', sans-serif;
-  background-color: #7E2625; /* Color antes de clic */
+  background-color: #49273F; /* ramos sin prereq morado oscuro */
   color: #fff;
   margin: 7px 0;
   padding: 10px;
@@ -52,17 +50,18 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #77080E; /* Color aprobado */
+  background-color: #77080E; /* aprobado rojo oscuro */
   color: #fff;
   text-decoration: line-through;
+  cursor: pointer;
 }
 
 .ramo.bloqueado {
-  background-color: #706F8B; /* Color bloqueado */
+  background-color: #706F8B; /* bloqueado morado grisáceo */
   color: #ccc;
   cursor: not-allowed;
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #9A3B3A; /* Sombra más clara al pasar el mouse (opcional) */
+  background-color: #7E2625; /* hover rojo oscuro */
 }
