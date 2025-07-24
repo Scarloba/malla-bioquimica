@@ -1,13 +1,13 @@
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #8097B7;
+  font-family: 'Lato', sans-serif;
+  background-color: #8097B7; /* Fondo general */
   margin: 20px;
   color: #333;
 }
 
 h1 {
   font-family: 'Playfair Display', serif;
-  color: #570210;
+  color: #570210; /* Color título */
   text-align: center;
   margin-bottom: 25px;
 }
@@ -17,30 +17,31 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  background-color: #8097B7; /* Mismo fondo para el contenedor */
   padding: 20px;
-  background-color: transparent;
+  border-radius: 8px;
 }
 
 .semestre {
-  border: 2px solid #211828;
+  border: 2px solid #211828; /* Borde oscuro */
   padding: 15px;
   width: 280px;
-  background: #E1FDFE;
+  background: #E1FDFE; /* Fondo tarjetas */
   border-radius: 8px;
-  box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(199, 50, 50, 0.3); /* Sombra rojiza suave */
 }
 
 .semestre h2 {
   font-family: 'Playfair Display', serif;
+  color: #570210; /* Color encabezados semestre */
   text-align: center;
   margin-bottom: 12px;
-  color: #570210;
   font-weight: 600;
 }
 
 .ramo {
   font-family: 'Lato', sans-serif;
-  background-color: #49273F;
+  background-color: #7E2625; /* Color antes de clic */
   color: #fff;
   margin: 7px 0;
   padding: 10px;
@@ -51,17 +52,17 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #77080E;
+  background-color: #77080E; /* Color aprobado */
   color: #fff;
   text-decoration: line-through;
 }
 
 .ramo.bloqueado {
-  background-color: #706F8B;
+  background-color: #706F8B; /* Color bloqueado */
   color: #ccc;
   cursor: not-allowed;
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #7E2625;
+  background-color: #9A3B3A; /* Sombra más clara al pasar el mouse (opcional) */
 }
