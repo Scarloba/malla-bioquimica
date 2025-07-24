@@ -62,7 +62,6 @@ h1 {
   cursor: not-allowed;
 }
 
-/* Hover solo si no está bloqueado ni aprobado */
 .ramo:hover:not(.bloqueado):not(.aprobado) {
   background-color: #7E2625;
 }
