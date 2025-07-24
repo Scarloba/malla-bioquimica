@@ -17,7 +17,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  background-color: #8097B7; /* mismo que body para un fondo unificado */
+  background-color: #8097B7;
   padding: 20px;
 }
 
@@ -27,7 +27,7 @@ h1 {
   width: 280px;
   background-color: #E1FDFE;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(119, 8, 14, 1); /* sombra rojiza */
+  box-shadow: 0 4px 6px rgba(119, 8, 14, 1);
 }
 
 .semestre h2 {
@@ -39,7 +39,7 @@ h1 {
 }
 
 .ramo {
-  background-color: #49273F; /* ramos sin prereq morado oscuro */
+  background-color: #49273F;
   color: #fff;
   margin: 7px 0;
   padding: 10px;
@@ -50,18 +50,18 @@ h1 {
 }
 
 .ramo.aprobado {
-  background-color: #77080E; /* aprobado rojo oscuro */
+  background-color: #77080E;
   color: #fff;
   text-decoration: line-through;
   cursor: pointer;
 }
 
 .ramo.bloqueado {
-  background-color: #706F8B; /* bloqueado morado grisáceo */
+  background-color: #706F8B;
   color: #ccc;
   cursor: not-allowed;
 }
 
 .ramo:hover:not(.bloqueado):not(.aprobado) {
-  background-color: #7E2625; /* hover rojo oscuro */
+  background-color: #7E2625;
 }
