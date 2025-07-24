@@ -1,4 +1,3 @@
-// Datos de la malla
 const malla = [
   { sem: 1, ramos: [
       { id: "intro_fp", name: "Introducción a la formación profesional" },
@@ -94,21 +93,17 @@ const malla = [
   }
 ];
 
-// Cargar estado aprobado desde localStorage
 let aprobados = JSON.parse(localStorage.getItem('aprobados')) || {};
 
-// Función para guardar el estado
 function guardarEstado() {
   localStorage.setItem('aprobados', JSON.stringify(aprobados));
 }
 
-// Verificar si se cumplen prerequisitos para un ramo
 function puedeAprobar(ramo) {
-  if (!ramo.prereq) return true; // Sin prerequisitos
+  if (!ramo.prereq) return true;
   return ramo.prereq.every(id => aprobados[id]);
 }
 
-// Renderizar la malla
 function renderMalla() {
   const mallaDiv = document.getElementById('malla');
   mallaDiv.innerHTML = '';
